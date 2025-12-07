@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>13주차 플래시카드</title>
+<style>
+body { font-family: sans-serif; padding: 25px; }
+.cards { display: flex; flex-wrap: wrap; gap: 20px; }
+.card {
+  width: 280px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  padding: 18px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+.card:hover { transform: translateY(-4px); }
+.answer {
+  display: none;
+  white-space: pre-line;
+  margin-top: 12px;
+  color: #005b76;
+  font-weight: 600;
+}
+.section {
+  width: 100%;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  color: #333;
+}
+</style>
+<script>
+function toggle(x){
+  const a = x.querySelector('.answer');
+  a.style.display = (a.style.display === 'block') ? 'none' : 'block';
+}
+</script>
+</head>
+<body>
+
+<h1>13주차 플래시카드</h1>
+<p>카드를 클릭하면 정답과 해설이 나타납니다.</p>
+
+<div class="cards">
+
+<!-- 🔥 관찰 vs 평가 -->
+<div class="section">① 관찰 vs 평가</div>
+
+<div class="card" onclick="toggle(this)">
+<b>철수는 어제 텔레비전을 보면서 손톱을 물어뜯었다.</b>
+<div class="answer">
+정답: 관찰
+
+해설: 행동만 기술하고 있으며, 해석이나 판단이 들어가 있지 않다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>김○○ 교수님은 이유 없이 나에게 화를 냈다.</b>
+<div class="answer">
+정답: 평가
+
+해설: "이유 없이"는 교수의 감정 동기를 추측·판단하는 해석이 들어간 표현이다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>수민이는 일을 너무 많이 한다.</b>
+<div class="answer">
+정답: 평가
+
+해설: "너무 많이"는 주관적 판단이 섞인 표현이다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>민아는 어제 3시간 동안 책을 읽었다.</b>
+<div class="answer">
+정답: 관찰
+
+해설: 해석 없이 사실만 전달한 문장이다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>민준이는 항상 게으르다.</b>
+<div class="answer">
+정답: 평가
+
+해설: 성격에 대한 단정·평가가 포함돼 있다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>영희는 대화 중 내 말을 끊고 주제를 바꿨다.</b>
+<div class="answer">
+정답: 관찰
+
+해설: 관찰 가능한 행동만 묘사하고 있다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>영희는 예의가 없다.</b>
+<div class="answer">
+정답: 평가
+
+해설: 행동이 아닌 인격적 평가가 포함돼 있다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>민호는 발표를 준비하지 않고 대충 했다.</b>
+<div class="answer">
+정답: 평가
+
+해설: "대충"은 주관적 해석이며 사실 묘사가 아니다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>지수는 약속 시간보다 30분 늦게 도착했다.</b>
+<div class="answer">
+정답: 관찰
+
+해설: 판단 없이 객관적 사실만 전달한다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>지수는 사람들을 배려할 줄 모른다.</b>
+<div class="answer">
+정답: 평가
+
+해설: 행동이 아닌 성향·성격을 단정하는 문장이다.
+</div>
+</div>
+
+<!-- 🔥 느낌 vs 생각 -->
+<div class="section">② 느낌 vs 생각</div>
+
+<div class="card" onclick="toggle(this)">
+<b>나는 무시당하는 느낌이 든다.</b>
+<div class="answer">
+정답: 생각
+
+해설: 느낌처럼 보이지만 "무시당한다"는 타인의 의도를 추측한 생각이다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>나는 불안하다.</b>
+<div class="answer">
+정답: 느낌
+
+해설: 감정 단어로 자신의 내적 느낌을 표현한다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>내 말을 듣지 않는 것 같아 화가 난다.</b>
+<div class="answer">
+정답: 느낌 + 생각 혼합
+
+해설: "듣지 않는 것 같아" = 생각 / "화가 난다" = 느낌
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>나는 내가 바보가 된 것 같다.</b>
+<div class="answer">
+정답: 생각
+
+해설: 자신에 대한 해석·평가이며 실제 감정 단어가 아니다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>나는 기쁘다.</b>
+<div class="answer">
+정답: 느낌
+
+해설: 대표적인 감정 단어.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>그 사람은 나를 일부러 곤란하게 하려 한다.</b>
+<div class="answer">
+정답: 생각
+
+해설: 타인의 의도를 추측한 해석이며 감정 표현이 아니다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>나는 서운하다.</b>
+<div class="answer">
+정답: 느낌
+
+해설: 자신의 감정 상태를 직접적으로 표현한 문장.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>나를 놀린 건 날 싫어해서다.</b>
+<div class="answer">
+정답: 생각
+
+해설: 감정이 아니라 타인의 감정을 추론한 해석이다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>나는 외롭다.</b>
+<div class="answer">
+정답: 느낌
+
+해설: 감정 단어.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>나를 돋보이게 하려고 비꼰 거다.</b>
+<div class="answer">
+정답: 생각
+
+해설: 타인의 동기를 해석한 추측이다.
+</div>
+</div>
+
+<!-- 🔥 부탁 -->
+<div class="section">③ 명확한 부탁 vs 불명확한 부탁</div>
+
+<div class="card" onclick="toggle(this)">
+<b>앞으로는 말투 좀 신경 써 줘.</b>
+<div class="answer">
+정답: 불명확한 부탁
+
+해설: 구체적 행동 요청이 아니라 기준이 추상적이다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>내가 말할 때 중간에 끼어들지 말아줘.</b>
+<div class="answer">
+정답: 명확한 부탁
+
+해설: 무엇을 어떻게 해줬으면 하는지 구체적으로 표현되어 있다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>사람들을 좀 더 배려해 줘.</b>
+<div class="answer">
+정답: 불명확한 부탁
+
+해설: 행동 기준이 모호하다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>회의 때 핸드폰을 보지 말아줬으면 해.</b>
+<div class="answer">
+정답: 명확한 부탁
+
+해설: 특정 상황 + 행동을 명확하게 요청한다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>기분 나쁘게 말하지 마.</b>
+<div class="answer">
+정답: 불명확한 부탁
+
+해설: 무엇을 어떻게 하라는 것인지 구체적이지 않다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>내가 발표할 때 시선을 나한테 맞춰 줘.</b>
+<div class="answer">
+정답: 명확한 부탁
+
+해설: 구체적인 행동 요청이다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>아무도 불편하지 않게 행동해 줘.</b>
+<div class="answer">
+정답: 불명확한 부탁
+
+해설: 기준이 모호하며 상대가 어떻게 행동해야 할지 알기 어렵다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>회의 자료 파일을 오늘 안으로 보내 줘.</b>
+<div class="answer">
+정답: 명확한 부탁
+
+해설: 요청 행동 + 기한이 명확하다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>나를 실망시키지 마.</b>
+<div class="answer">
+정답: 불명확한 부탁
+
+해설: 감정적 표현이며 구체적인 행동 기준이 없다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>운전할 때 속도를 시속 80km 이하로 유지해 줘.</b>
+<div class="answer">
+정답: 명확한 부탁
+
+해설: 수행 행동이 정확하게 규정되어 있다.
+</div>
+</div>
+
+</div>
+</body>
+</html>

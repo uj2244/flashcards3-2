@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>8주차 플래시카드</title>
+<style>
+body { font-family: sans-serif; padding: 25px; }
+.cards { display: flex; flex-wrap: wrap; gap: 20px; }
+.card {
+  width: 280px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  padding: 18px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+.card:hover { transform: translateY(-4px); }
+.answer {
+  display: none;
+  white-space: pre-line;
+  margin-top: 12px;
+  color: #005b76;
+  font-weight: 600;
+}
+</style>
+<script>
+function toggle(x){
+  const a = x.querySelector('.answer');
+  a.style.display = (a.style.display === 'block') ? 'none' : 'block';
+}
+</script>
+</head>
+<body>
+
+<h1>8주차 플래시카드</h1>
+<p>카드를 클릭하면 정답과 해설이 나타납니다.</p>
+
+<div class="cards">
+
+<!-- 🔥 여기부터 카드들 -->
+<div class="card" onclick="toggle(this)">
+<b>스트레스란?</b>
+<div class="answer">
+정답: 스트레스는 사건이 아니라 사건을 어떻게 해석하느냐에 따라 달라진다.
+
+해설: 동일한 상황이라도 개인이 그것을 '위협'으로 해석하면 스트레스 반응이 강해지고, '도전'으로 해석하면 적응적인 반응이 나타난다. 즉 스트레스의 핵심은 상황이 아니라 인지적 평가이다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>스트레스와 GAS</b>
+<div class="answer">
+정답: GAS = 경고 → 저항 → 소진
+
+해설: 스트레스가 지속되면 초기 경고 반응 이후 저항 단계에서 버티지만, 장기화되면 신체 자원이 고갈되어 소진 단계에 이른다. 장기 스트레스가 건강을 해치는 이유가 여기에 있다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>스트레스 반응</b>
+<div class="answer">
+정답: 투쟁·도피 + 돌봄·친교
+
+해설: 위협 자극에 대해 싸우거나 도망가는 반응 외에도, 타인과 연결을 강화하여 안전과 지지를 얻으려는 '돌봄·친교' 반응 또한 대표적인 스트레스 대처 방식이다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>스트레스 인지적 평가</b>
+<div class="answer">
+정답: 1차 평가(위협/도전) + 2차 평가(대처 가능성)
+
+해설: 같은 상황이라도 '해낼 수 있다'고 평가하면 도전 반응이 나타나고, '감당할 수 없다'고 평가하면 위협 반응과 부정적 정서가 증가한다. 스트레스의 핵심은 평가 과정이다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>대처 전략</b>
+<div class="answer">
+정답: 문제중심 대처 vs 정서중심 대처
+
+해설: 문제중심 대처는 스트레스 원인을 해결하려는 방식이며, 정서중심 대처는 감정을 완화하려는 방식이다. 상황 통제가 가능할 때는 문제중심 대처가 더 효과적이다.
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<b>사회적 지지</b>
+<div class="answer">
+정답: 사회적 지지는 스트레스 완충 효과가 있다.
+
+해설: 주변 사람의 지지 경험은 스트레스 상황에서도 건강을 보호하는 요인으로 작용한다. 정서적 지지·도구적 지지·정보적 지지가 모두 완충 효과를 가진다.
+</div>
+</div>
+
+<!-- 🔥 카드 끝 -->
+
+</div>
+</body>
+</html>
